@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply bg-bg text-gray-100; font-family: 'Inter', ui-sans-serif, system-ui, -apple-system; }
+
+input, select, textarea { @apply bg-card text-gray-100 border border-gray-700 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/60 placeholder:text-gray-500; }
+
+button { @apply rounded-lg px-4 py-2 font-medium transition-all; }
+
+.btn { @apply inline-flex items-center justify-center gap-2; }
+.btn-primary { @apply btn bg-primary hover:bg-blue-600 text-white shadow shadow-blue-900/40; }
+.btn-secondary { @apply btn bg-gray-800 hover:bg-gray-700 text-gray-100 border border-gray-700; }
+
+.card { @apply bg-card/80 backdrop-blur rounded-xl border border-gray-800 shadow-lg p-5; }
+.card-header { @apply flex items-center justify-between mb-3; }
+.card-title { @apply text-lg font-semibold; }
+.stat { @apply rounded-xl bg-card p-4 border border-gray-800; }
+.stat-value { @apply text-3xl font-semibold tracking-tight; }
+.stat-label { @apply text-sm text-muted; }
+
+.grid-2 { @apply grid grid-cols-1 md:grid-cols-2 gap-4; }
+.container { @apply max-w-7xl mx-auto; }
+.table { @apply min-w-full text-sm; }
+.table thead tr { @apply text-left text-gray-400 bg-gray-900/40; }
+.table tbody tr { @apply border-t border-gray-800 hover:bg-gray-900/30 transition; }
